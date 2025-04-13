@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($usuario->autenticar($email, $password)) {
         $_SESSION['usuario'] = $email;
-        setcookie("usuario", $email, time() + (86400 * 30), "/"); // 30 días
+        setcookie("usuario", $email, time() + (86400 * 30), "/"); 
         header("Location: ../views/dashboard.php");
         exit;
     } else {

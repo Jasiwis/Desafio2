@@ -5,7 +5,7 @@ header("Content-Type: application/json");
 $doc = new Documento();
 $documentos = $doc->obtenerTodos(); // Llamamos al método obtenerTodos()
 
-// Si quieres devolver un formato más estructurado, puedes hacerlo así:
+// Devuelve un formato más estructurado
 $response = [
     "status" => "success",
     "data" => $documentos

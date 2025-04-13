@@ -74,7 +74,7 @@ class Documento {
             $stmt = $this->conn->prepare("DELETE FROM documentos WHERE id = ?");
             $stmt->bind_param("i", $documento_id);
             $stmt->execute();
-            $stmt->close(); // Buena práctica cerrar también el segundo
+            $stmt->close(); 
         }
     }
 }
